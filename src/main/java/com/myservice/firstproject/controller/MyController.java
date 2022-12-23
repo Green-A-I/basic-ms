@@ -16,6 +16,7 @@ public class MyController {
 		return new Date();
 	}
 	
+	//
 	@GetMapping("/getCustomerName")
 	public String getName() {
 		return "Hi My name is Swapnil baba";

@@ -6,6 +6,8 @@ import javax.persistence.Id;
 @Entity
 public class PersonDetails {
 
+	
+	
 	@Id
 	private String id;
 	

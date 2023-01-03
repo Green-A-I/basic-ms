@@ -1,7 +1,10 @@
 package com.myservice.firstproject.entity;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class PersonDetails {
@@ -10,10 +13,13 @@ public class PersonDetails {
 	
 	@Id
 	private String id;
-	
+
+
 	private String personName;
 	private String city;
 	private String mobNumber;
+
+
 	public String getId() {
 		return id;
 	}

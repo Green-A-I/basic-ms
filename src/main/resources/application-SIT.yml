@@ -1,0 +1,5 @@
+firstapplication:
+  mysomevalue: default value SIT
+
+ms1:
+  url: http://localhost:1111/hello

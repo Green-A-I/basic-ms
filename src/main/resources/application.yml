@@ -2,6 +2,8 @@ server:
   servlet:
     context-path: /myfirstapplication
 spring:
+  profiles:
+    active: UAT
   main:
     allow-bean-definition-overriding: true
   jpa:
@@ -19,3 +21,4 @@ spring:
     username: postgres
     password: charlie
     driver: org.postgresql.Driver
+

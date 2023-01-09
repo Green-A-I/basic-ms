@@ -2,6 +2,8 @@ package com.myservice.firstproject.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,10 +28,14 @@ public class RegisterUserController {
 	@Autowired
 	private PersonDetailsService personDetailsService;
 
+	private static final Logger LOGGER = LogManager.getLogger(RegisterUserController.class);
+
 	@PostMapping("/register")
 	public String register(@RequestBody UserDetails userDetails) {
 		// save to DB
-		
+		LOGGER.debug("this is debug msg");
+
+		System.out.println("inside register");
 	String res = registrationService.registerService(userDetails);
 		
 	return res;
